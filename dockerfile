@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install spaCy and download the English model
-RUN pip install spacy==3.0.0 && \
+RUN pip install -r requirements.txt && \
     python -m spacy download en_core_web_md
 
 
